@@ -1,0 +1,8 @@
+# Project files
+*.js eol=lf
+*.ts eol=lf
+
+# Configuration files
+*.json eol=lf
+*.yml eol=lf
+*.yaml eol=lf
