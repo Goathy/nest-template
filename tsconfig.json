@@ -15,6 +15,14 @@
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@app/config/app": ["libs/config/app/src"],
+      "@app/config/app/*": ["libs/config/app/src/*"],
+      "@app/common/validations": ["libs/common/validations/src"],
+      "@app/common/validations/*": ["libs/common/validations/src/*"],
+      "@app/common/helpers": ["libs/common/helpers/src"],
+      "@app/common/helpers/*": ["libs/common/helpers/src/*"]
+    }
   }
 }

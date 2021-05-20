@@ -5,5 +5,13 @@
   "testRegex": ".e2e-spec.ts$",
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/config/app/(.*)": "<rootDir>/../libs/config/app/src/$1",
+    "@app/config/app": "<rootDir>/../libs/config/app/src",
+    "@app/common/validations/(.*)": "<rootDir>/../libs/common/validations/src/$1",
+    "@app/common/validations": "<rootDir>/../libs/common/validations/src",
+    "@app/common/helpers/(.*)": "<rootDir>/../libs/common/helpers/src/$1",
+    "@app/common/helpers": "<rootDir>/../libs/common/helpers/src"
   }
 }
