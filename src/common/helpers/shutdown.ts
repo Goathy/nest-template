@@ -1,5 +1,4 @@
 import { Logger } from '@nestjs/common';
-
 import type { NestFastifyApplication } from '@nestjs/platform-fastify';
 
 export const shutdown = (app: NestFastifyApplication) => {

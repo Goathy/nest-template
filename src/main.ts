@@ -1,12 +1,11 @@
-import { shutdown } from '@app/common/helpers';
-import { AppConfigService } from '@app/config/app';
+import { shutdown } from '@common/helpers';
+import { AppConfigService } from '@config/app';
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { FastifyAdapter } from '@nestjs/platform-fastify';
+import type { NestFastifyApplication } from '@nestjs/platform-fastify';
 
 import { AppModule } from './app.module';
-
-import type { NestFastifyApplication } from '@nestjs/platform-fastify';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());

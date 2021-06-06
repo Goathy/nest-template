@@ -17,12 +17,12 @@
     "baseUrl": "./",
     "incremental": true,
     "paths": {
-      "@app/config/app": ["libs/config/app/src"],
-      "@app/config/app/*": ["libs/config/app/src/*"],
-      "@app/common/validations": ["libs/common/validations/src"],
-      "@app/common/validations/*": ["libs/common/validations/src/*"],
-      "@app/common/helpers": ["libs/common/helpers/src"],
-      "@app/common/helpers/*": ["libs/common/helpers/src/*"]
+      "@config/app": ["src/config/app"],
+      "@config/app/*": ["src/config/app/*"],
+      "@common/validations": ["src/common/validations"],
+      "@common/validations/*": ["src/common/validations/*"],
+      "@common/helpers": ["src/common/helpers"],
+      "@common/helpers/*": ["src/common/helpers/*"]
     }
   }
 }

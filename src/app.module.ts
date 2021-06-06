@@ -1,4 +1,4 @@
-import { AppConfigModule } from '@app/config/app';
+import { AppConfigModule } from '@config/app';
 import { Module } from '@nestjs/common';
 
 import { AppController } from './app.controller';

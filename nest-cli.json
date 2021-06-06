@@ -1,36 +1,4 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src",
-  "projects": {
-    "config/app": {
-      "type": "library",
-      "root": "libs/config/app",
-      "entryFile": "index",
-      "sourceRoot": "libs/config/app/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/config/app/tsconfig.lib.json"
-      }
-    },
-    "common/validations": {
-      "type": "library",
-      "root": "libs/common/validations",
-      "entryFile": "index",
-      "sourceRoot": "libs/common/validations/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/common/validations/tsconfig.lib.json"
-      }
-    },
-    "common/helpers": {
-      "type": "library",
-      "root": "libs/common/helpers",
-      "entryFile": "index",
-      "sourceRoot": "libs/common/helpers/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/common/helpers/tsconfig.lib.json"
-      }
-    }
-  },
-  "compilerOptions": {
-    "webpack": true
-  }
+  "sourceRoot": "src"
 }
