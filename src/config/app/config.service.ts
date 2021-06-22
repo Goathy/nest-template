@@ -1,14 +1,18 @@
-import { Injectable } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
+import { Inject, Injectable } from '@nestjs/common';
+import { ConfigType } from '@nestjs/config';
+
+import { applicationConfig } from './configuration';
 
 @Injectable()
 export class AppConfigService {
-  constructor(private configService: ConfigService) {}
+  constructor(
+    @Inject(applicationConfig.KEY) private readonly appConfig: ConfigType<typeof applicationConfig>
+  ) {}
 
   get env() {
-    return this.configService.get<string>('app.env')!;
+    return this.appConfig.env!;
   }
   get port() {
-    return this.configService.get<number>('app.port')!;
+    return this.appConfig.port!;
   }
 }

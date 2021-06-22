@@ -11,7 +11,7 @@
     "@config/app": "<rootDir>/../src/config/app",
     "@common/validations/(.*)": "<rootDir>/../src/common/validations/$1",
     "@common/validations": "<rootDir>/../src/common/validations",
-    "@common/helpers/(.*)": "<rootDir>/../src/common/helpers$1",
+    "@common/helpers/(.*)": "<rootDir>/../src/common/helpers/$1",
     "@common/helpers": "<rootDir>/../src/common/helpers"
   }
 }
