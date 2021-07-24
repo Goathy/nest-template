@@ -1,7 +1,7 @@
 import { Logger } from '@nestjs/common';
-import type { NestFastifyApplication } from '@nestjs/platform-fastify';
+import type { NestExpressApplication } from '@nestjs/platform-express';
 
-export const shutdown = (app: NestFastifyApplication) => {
+export const shutdown = (app: NestExpressApplication) => {
   process.on('SIGINT', () => {
     app
       .close()
