@@ -7,10 +7,8 @@
     "^.+\\.(t|j)s$": "ts-jest"
   },
   "moduleNameMapper": {
-    "@config/app/(.*)": "<rootDir>/../src/config/app/$1",
-    "@config/app": "<rootDir>/../src/config/app",
-    "@common/validations/(.*)": "<rootDir>/../src/common/validations/$1",
-    "@common/validations": "<rootDir>/../src/common/validations",
+    "@config/(.*)": "<rootDir>/../src/config/$1",
+    "@config": "<rootDir>/../src/config",
     "@common/helpers/(.*)": "<rootDir>/../src/common/helpers/$1",
     "@common/helpers": "<rootDir>/../src/common/helpers"
   }

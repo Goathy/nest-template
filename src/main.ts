@@ -1,5 +1,6 @@
 import { shutdown } from '@common/helpers';
-import { AppConfigService } from '@config/app';
+import { ConfigModule } from '@config';
+import { ServerConfig } from '@config/server.config';
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { FastifyAdapter } from '@nestjs/platform-fastify';
@@ -10,9 +11,9 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());
 
-  const appConfig = app.get(AppConfigService);
+  const config = app.select(ConfigModule).get(ServerConfig, { strict: true });
 
-  const PORT = appConfig.port;
+  const PORT = config.port;
 
   shutdown(app);
 

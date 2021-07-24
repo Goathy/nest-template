@@ -17,10 +17,8 @@
     "baseUrl": "./",
     "incremental": true,
     "paths": {
-      "@config/app": ["src/config/app"],
-      "@config/app/*": ["src/config/app/*"],
-      "@common/validations": ["src/common/validations"],
-      "@common/validations/*": ["src/common/validations/*"],
+      "@config": ["src/config"],
+      "@config/*": ["src/config/*"],
       "@common/helpers": ["src/common/helpers"],
       "@common/helpers/*": ["src/common/helpers/*"]
     }
