@@ -16,6 +16,7 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
+    "sourceMap": true,
     "paths": {
       "@config": ["src/config"],
       "@config/*": ["src/config/*"],
