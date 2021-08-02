@@ -11,8 +11,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Install Dependencies
+      - name: Setup node
         uses: actions/setup-node@v2
         with:
           node-version: '14.x'
-      - run: npm install
+
+      - name: install npm@7
+        run: npm install -g npm@7
+
+      - name: install dependencies
+        run: npm ci
