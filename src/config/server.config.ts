@@ -1,16 +1,16 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 
-import type { Environment, EnvironmentVariables } from './env.variables';
+import type { EnvironmentVariables } from './env.variables';
 
 @Injectable()
 export class ServerConfig {
   constructor(private readonly config: ConfigService<EnvironmentVariables>) {}
 
-  get env(): Environment {
-    return this.config.get<Environment>('APP_ENV')!;
+  get env() {
+    return this.config.get('APP_ENV', { infer: true })!;
   }
-  get port(): number {
-    return this.config.get<number>('APP_PORT')!;
+  get port() {
+    return this.config.get('APP_PORT', { infer: true })!;
   }
 }
