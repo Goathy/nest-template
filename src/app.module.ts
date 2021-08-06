@@ -1,11 +1,12 @@
-import { ConfigModule } from '@config';
 import { Module } from '@nestjs/common';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { ConfigModule } from './config';
+import { GracefulShutdownModule } from './graceful-shutdown';
 
 @Module({
-  imports: [ConfigModule],
+  imports: [ConfigModule, GracefulShutdownModule],
   controllers: [AppController],
   providers: [AppService],
 })

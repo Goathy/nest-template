@@ -16,12 +16,6 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "sourceMap": true,
-    "paths": {
-      "@config": ["src/config"],
-      "@config/*": ["src/config/*"],
-      "@common/helpers": ["src/common/helpers"],
-      "@common/helpers/*": ["src/common/helpers/*"]
-    }
+    "sourceMap": true
   }
 }
